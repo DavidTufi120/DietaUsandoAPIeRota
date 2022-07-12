@@ -5,7 +5,7 @@ import './../Header/style.css'
 function Header(){
     return(
         <header>
-            <h2>Dieta com Saúde</h2>
+            <h2>DIETA COM SAÚDE</h2>
 
             <div className='menu'>
                 <Link to='/'>Home</Link>

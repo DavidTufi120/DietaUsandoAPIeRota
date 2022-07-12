@@ -19,6 +19,10 @@ function loadApi(){
 loadApi()
 },[]);
 
+function teste(){
+  alert('oi')
+}
+
 return(
 
  
