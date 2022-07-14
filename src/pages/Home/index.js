@@ -1,11 +1,11 @@
 
 import React, { useEffect, useState} from 'react';
 import './../../style.css';
-import { Link } from 'react-router-dom'
-
 
 function Home(){
 const [nutri, setNutri] = useState([]);
+
+
 
 useEffect(()=> {
 function loadApi(){
@@ -19,9 +19,7 @@ function loadApi(){
 loadApi()
 },[]);
 
-function teste(){
-  alert('oi')
-}
+
 
 return(
 
@@ -38,7 +36,7 @@ return(
           {item.subtitulo}
         </p>
         <h2>Categoria: {item.categoria}</h2>
-        <a className="botao">Acessar</a>
+       <button name="redirect" className="botao">Acessar</button>
         </article>
       )
     })}

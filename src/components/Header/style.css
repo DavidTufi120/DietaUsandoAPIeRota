@@ -7,30 +7,148 @@ header {
     background-color: #4c89e3;
     color: #FFF;
     justify-content: space-between;
-    
-   }
 
-   @media(max-width: 500px)
-   {
-    header{
-    width: 100%;
+}
+
+@media(max-width: 500px) {
+
+
+    .menu {
+        display: none;
+    }
+
+
+    label span {
+       
+        position: absolute;
+        display: block;
+        height: 5px;
+        width: 10%;
+        border-radius: 30px;
+        background-color: #FFF;
+        transition: 0.5 ease-in-out;
+        margin-top: 7%;
+        margin-left: 5%;
+    }
+
+    label span:nth-child(1) {
+        top: 0px;
+    }
+
+    label span:nth-child(2) {
+        top: 9px;
+    }
+
+    label span:nth-child(3) {
+        top: 18px;
+    }
+
+    #chec:checked + label span:nth-child(1){
+        transform: rotate(-45deg);
+        top: 8px;
+    }
+
+    #chec:checked + label span:nth-child(2){
+        opacity: 0;
+    }
+
+    #chec:checked + label span:nth-child(3){
+        transform: rotate(45deg);
+        top: 8px;
+        }
+
+    .menulateral {
+        height: 80px;
+        display: flex;
+    }
+
+    #menu {
+        height: 80px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    header ul {
+        list-style: none;
+        padding: 0px;
+        margin-top: 50%;
+
+    }
+
+    header li {
+        margin-bottom: 20px;
+        margin-right: 200px;
+
+    }
+
+    header a {
+        font-size: 20px;
+        text-decoration: none;
+        padding: 10px 50px 10px 10px;
+    }
+
+    header label {
+        z-index: 1;
+    }
+
+    input[type="checkbox"] {
+
+        display: none;
+    }
+
+    .img {
+        width: 70px;
+        border-radius: 5px;
+        margin: 10px;
+    }
+
+
+    header nav {
+        background-color: #4c89e3;
+        height: 45%;
+        width: 40%;
+        left: -350px;
+        position: absolute;
+        transition: all .5s;
+    }
+
+
+    header nav ::after {
+        background-color: black;
+        height: 45%;
+        width: 40%;
+        left: -350px;
+        position: absolute;
+        transition: all .5s;
+    }
+
+    input[type="checkbox"]:checked~nav {
+        transform: translateX(350px);
     }
 
 }
-   
 
-header a {
-    color: #FFF;
-    font-size: 20px;
-    margin-left: 10px;
-    text-decoration: none;
-}
+@media(min-width:501px) {
 
-.menu{
-    margin-right: 2%;
-    justify-content: space-around;
-}
+    header a {
+        color: rgb(255, 255, 255);
+        font-size: 20px;
+        margin-left: 10px;
+        text-decoration: none;
 
-h2{
-    padding-left: 2%;
+    }
+
+    .menu {
+        margin-right: 2%;
+        justify-content: space-around;
+    }
+
+    .menulateral {
+        display: none;
+    }
+
+    h2 {
+        padding-left: 2%;
+    }
 }

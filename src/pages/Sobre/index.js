@@ -1,14 +1,19 @@
-import { Link } from 'react-router-dom'
+import './style.css'
+
 
 function Sobre(){
     return(
-        <div>
-            <h1>Página sobre a empresa</h1>
-            <span>OI MELI</span>
-
-            <Link to="/">Página Home</Link>
-            <Link to="/contato">Contato</Link>
+        <>
+      <div>
+        <div className='content-wrapper'>
+        <img src={require('./../../assets/Fruits.jpg')} alt="Imagem de frutas vermelhas"/>
+        <h1 className='content-text'>CONHEÇA A DIETA COM SAÚDE</h1>
         </div>
+        </div>
+   
+
+            
+        </>
     )
 }
 

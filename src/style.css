@@ -4,10 +4,6 @@ body{
     box-sizing: border-box;
 }
 
-.corinthians{
-    width: 100px;
-}
-
 .container{
 display: flex;
 flex-direction: column;
@@ -48,7 +44,7 @@ align-items: center;
         width: 10%;
         justify-content: center;
         align-items: center;
-        margin-left: 50%;
+        margin-left: 45%;
 
        }
 
@@ -68,10 +64,7 @@ align-items: center;
 
        
 }
-.oi{
-  
-    border-radius: 5px;
-}
+
 
 @media(min-width: 500px){
 

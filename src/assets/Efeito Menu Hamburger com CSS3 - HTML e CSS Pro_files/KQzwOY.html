@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<!-- saved from url=(0074)https://cdpn.io/htmlecsspro/fullembedgrid/KQzwOY?animations=run&type=embed -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  
+  
+<link rel="apple-touch-icon" type="image/png" href="https://cpwebassets.codepen.io/assets/favicon/apple-touch-icon-5ae1a0698dcc2402e9712f7d01ed509a57814f994c660df9f7a952f3060705ee.png">
+<meta name="apple-mobile-web-app-title" content="CodePen">
+
+<link rel="shortcut icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico">
+
+<link rel="mask-icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/logo-pin-8f3771b1072e3c38bd662872f6b673a722f4b3ca2421637d5596661b4e2132cc.svg" color="#111">
+
+
+  <title>CodePen - Efeito Menu Hamburger com CSS3</title>
+  
+  
+  
+  
+<style>
+body{
+  background: #DEB887;
+}
+.container{
+  position: relative;
+  width: 60px;
+  margin: 20px auto;
+}
+.btn {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  top: 0;
+  left: 0px;
+  cursor: pointer;
+}
+.btn-left {
+  background-color: #333;
+  position: absolute;
+  height: 8px;
+  width: 30px;
+  top: 30px;
+  left: 0px;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+.btn-left:before {
+  background-color: #333;
+  position: absolute;
+  width: 30px;
+  height: 8px;
+  content: "";
+  top: -20px;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+.btn-left:after {
+  background-color: #333;
+  position: absolute;
+  width: 30px;
+  height: 8px;
+  content: "";
+  top: 20px;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+
+.btn-right {
+  background-color: #333;
+  position: absolute;
+  height: 8px;
+  width: 30px;
+  top: 30px;
+  left: 30px;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+.btn-right:before {
+  background-color: #333;
+  position: absolute;
+  width: 30px;
+  height: 8px;
+  content: "";
+  top: -20px;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+.btn-right:after {
+  background-color: #333;
+  position: absolute;
+  width: 30px;
+  height: 8px;
+  content: "";
+  top: 20px;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+
+.active .btn-left {
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  background: transparent;
+}
+.active .btn-left:before {
+  -webkit-transform: rotateZ(45deg) scaleX(1.4) translate(4px, 4px);
+  transform: rotateZ(45deg) scaleX(1.4) translate(4px, 4px);
+}
+.active .btn-left:after {
+  -webkit-transform: rotateZ(-45deg) scaleX(1.4) translate(4px, -4px);
+  transform: rotateZ(-45deg) scaleX(1.4) translate(4px, -4px);
+}
+.active .btn-right {
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  background: transparent;
+}
+.active .btn-right:before {
+  -webkit-transform: rotateZ(-45deg) scaleX(1.4) translate(-4px, 4px);
+  transform: rotateZ(-45deg) scaleX(1.4) translate(-4px, 4px);
+}
+.active .btn-right:after {
+  -webkit-transform: rotateZ(45deg) scaleX(1.4) translate(-4px, -4px);
+  transform: rotateZ(45deg) scaleX(1.4) translate(-4px, -4px);
+}
+</style>
+
+  
+  
+  
+  <script>
+  if (document.location.search.match(/type=embed/gi)) {
+    window.parent.postMessage("resize", "*");
+  }
+</script>
+
+
+</head>
+
+<body translate="no">
+  
+
+  
+    <title>Efeito Menu Hamburger com CSS3</title>
+  
+  
+
+    <div class="container">
+      <div class="btn">
+        <div class="btn-left"></div>
+        <div class="btn-right"></div>
+      </div>
+    </div>
+
+    <script src="./jquery.min.js.download"></script>
+
+  
+
+    <script src="./stopExecutionOnTimeout-1b93190375e9ccc259df3a57c1abc0e64599724ae30d7ea4c6877eb615f89387.js.download"></script>
+
+  
+      <script id="rendered-js">
+$('.btn').click(function () {
+  $(this).toggleClass('active');
+});
+//# sourceURL=pen.js
+    </script>
+
+  
+
+  <script src="./iframeRefreshCSS-4793b73c6332f7f14a9b6bba5d5e62748e9d1bd0b5c52d7af6376f3d1c625d7e.js.download"></script>
+
+
+
+ 
+</body></html>
