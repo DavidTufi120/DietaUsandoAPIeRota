@@ -1,20 +1,31 @@
+
+
+
 header {
     display: flex;
-    justify-content: center;
     align-items: center;
     height: 80px;
     width: 100%;
     background-color: #4c89e3;
-    color: #FFF;
     justify-content: space-between;
-
-}
+    }
 
 @media(max-width: 500px) {
 
 
+  
+
     .menu {
         display: none;
+    }
+
+    h3{
+        color: #FFF;
+        margin-right: 30px;
+    }
+
+    h3:visited{
+        color: #FFF
     }
 
 
@@ -73,23 +84,28 @@ header {
         list-style: none;
         padding: 0px;
         margin-top: 50%;
-
-    }
+        margin-left: 10%;
+        
+}
 
     header li {
-        margin-bottom: 20px;
-        margin-right: 200px;
-
-    }
-
+      margin: 0 200px 20px 0px;
+   }
+   
+    
     header a {
         font-size: 20px;
         text-decoration: none;
         padding: 10px 50px 10px 10px;
+        color: #FFF;
+    }
+
+    header a:visited{
+        color: #FFF;
     }
 
     header label {
-        z-index: 1;
+        z-index: 2;
     }
 
     input[type="checkbox"] {
@@ -97,30 +113,14 @@ header {
         display: none;
     }
 
-    .img {
-        width: 70px;
-        border-radius: 5px;
-        margin: 10px;
-    }
-
-
     header nav {
         background-color: #4c89e3;
-        height: 45%;
+        height: 100%;
         width: 40%;
         left: -350px;
         position: absolute;
         transition: all .5s;
-    }
-
-
-    header nav ::after {
-        background-color: black;
-        height: 45%;
-        width: 40%;
-        left: -350px;
-        position: absolute;
-        transition: all .5s;
+        z-index: 1;
     }
 
     input[type="checkbox"]:checked~nav {
@@ -132,7 +132,7 @@ header {
 @media(min-width:501px) {
 
     header a {
-        color: rgb(255, 255, 255);
+        color: #FFF;
         font-size: 20px;
         margin-left: 10px;
         text-decoration: none;

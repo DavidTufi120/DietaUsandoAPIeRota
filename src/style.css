@@ -4,14 +4,9 @@ body{
     box-sizing: border-box;
 }
 
-.container{
-display: flex;
-flex-direction: column;
-width: 100%;
-justify-content: center;
-align-items: center;
+*{
+    font-family: Arial, Helvetica, sans-serif;
 }
-
 
 @media(max-width: 500px){
 
@@ -37,6 +32,8 @@ align-items: center;
     .botao:hover{
         background-color: #4c89e3;
         color: white;
+        cursor:pointer;
+
     }
        .container{
         display: flex;
@@ -44,8 +41,7 @@ align-items: center;
         width: 10%;
         justify-content: center;
         align-items: center;
-        margin-left: 45%;
-
+       
        }
 
        .post{
@@ -72,7 +68,7 @@ align-items: center;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        width: 780px;
+        width: 70%;
         background-color: #fff;
         border-radius: 7px;
         border-width: 1px;
@@ -80,6 +76,15 @@ align-items: center;
         padding: 10px;
         align-items: center;
     }
+
+    .container{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        }
+        
 
     .botao{
         height: 40px;
@@ -93,12 +98,14 @@ align-items: center;
         justify-content: center;
         font-weight: bold;
         transition: all 0.5s;
+        
     
     }
     
     .botao:hover{
         background-color: #4c89e3;
         color: white;
+        cursor:pointer;
     }
 
 }

@@ -1,0 +1,23 @@
+footer{
+ flex-shrink: 0;
+ background-color:  #4c89e3;
+ color: white;
+ padding: 30px;
+ justify-content:space-between ;
+}
+
+footer ul{
+    list-style: none;
+    
+   
+}
+
+.footer-link{
+    color: white;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+   
+}

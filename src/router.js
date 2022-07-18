@@ -5,6 +5,7 @@ import Sobre from './pages/Sobre';
 import Contato from './pages/Contato';
 import Header from './components/Header';
 import Erro from './pages/Erro';
+import Footer from './components/Footer';
 
 function RoutesApp(){
     return(
@@ -18,6 +19,7 @@ function RoutesApp(){
             <Route path="*" element={<Erro/>}/>
 
         </Routes>
+        <Footer/>
         </BrowserRouter>
     )
 }
