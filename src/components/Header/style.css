@@ -12,16 +12,13 @@ header {
 
 @media(max-width: 500px) {
 
-
-  
-
-    .menu {
+.menu {
         display: none;
     }
 
     h3{
         color: #FFF;
-        margin-right: 30px;
+        margin-right: 20px;
     }
 
     h3:visited{
@@ -144,11 +141,13 @@ header {
         justify-content: space-around;
     }
 
+    .menu a:hover{
+        color: black;
+    }
+
     .menulateral {
         display: none;
     }
 
-    h2 {
-        padding-left: 2%;
-    }
+  
 }

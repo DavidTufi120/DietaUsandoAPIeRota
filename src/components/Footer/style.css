@@ -1,23 +1,86 @@
-footer{
- flex-shrink: 0;
- background-color:  #4c89e3;
- color: white;
- padding: 30px;
- justify-content:space-between ;
-}
-
-footer ul{
-    list-style: none;
+html{
+    position: relative;
     
-   
 }
 
-.footer-link{
-    color: white;
-    margin-top: 8px;
-    margin-bottom: 8px;
-    text-decoration: none;
+body{
     display: flex;
     flex-direction: column;
-   
+    min-height: 100%;
+   }
+
+footer{
+ background-color:  #4c89e3;
+ width: 100%;
+ min-height: 150px;
+ color: white;
+ display: flex;
+ justify-content: center;
+ position: relative;
+ bottom: 0;
 }
+
+footer p{
+    position: absolute;
+    bottom: 0;
+}
+footer .boxs{
+    min-height: 150px;
+    text-align: left;
+    align-items: left;
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-bottom: 30px
+}
+
+.boxs ul{
+    padding: 0px;
+}
+
+.boxs ul li{
+    margin: 10px 0px;
+    list-style: none;
+    align-items: left;
+    display: flex;
+    font-size: 20px;
+}
+
+.boxs ul li a{
+    color: white;
+    text-decoration: none;
+    text-align: left;
+    display: flex;
+}
+
+.boxs ul li a:visited{
+    color: white;
+    text-decoration: none;
+}
+
+.boxs ul li a:hover{
+    color: black;
+}
+
+.boxs p{
+    text-align: left;
+}
+
+.boxs ul button{
+  background: none;
+  border: none;
+  color: #FFF;
+  font-size: 20px;
+}
+
+footer .boxs :nth-child(2){
+ letter-spacing: 2px;
+}
+
+footer .boxs ul li a i{
+  margin-right: 5px;
+  font-size: 30px;
+}
+
+
+
+
