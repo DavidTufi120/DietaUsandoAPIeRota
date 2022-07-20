@@ -17,7 +17,8 @@ function Home() {
     loadApi()
   }, []);
 
-  return (
+  return ( 
+     <main>
 
     <div className="container">
 
@@ -36,6 +37,8 @@ function Home() {
       })}
 
     </div>
+
+    </main>
 
   )
 }

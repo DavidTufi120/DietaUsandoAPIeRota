@@ -4,7 +4,7 @@ import './../Sobre/style.css'
 function Sobre() {
     return (
         <>
-
+           <body>
             <div className='content-wrapper'>
                 <h1 className='content-text'>CONHEÇA A DIETA COM SAÚDE</h1>
                 <img src={require('./../../assets/Fruits.jpg')} alt="Imagem de frutas vermelhas" />
@@ -22,6 +22,7 @@ function Sobre() {
                 </article>
 
             </div>
+            </body>
         </>
 
     )
