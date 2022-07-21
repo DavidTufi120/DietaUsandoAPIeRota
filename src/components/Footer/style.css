@@ -31,7 +31,7 @@ main{
   }
 
 footer p{
-    position: absolute;
+  position: absolute;
     bottom: 0;
 }
 footer .boxs{
@@ -91,6 +91,9 @@ footer .boxs ul li a i{
   font-size: 30px;
 }
 
+@media(max-width:500px){
+    .boxs:nth-child(2){
+        margin-bottom: 50px;
+      }
 
-
-
+}

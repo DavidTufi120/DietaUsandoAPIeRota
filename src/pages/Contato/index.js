@@ -51,6 +51,7 @@ function Contato() {
      }
  }
 
+
  function validate(){
     if(!user.name) return setStatus({ type: 'error', mensagem: 'Erro: Necessário preencher o campo Nome! '}); 
     if(!user.email) return setStatus({ type: 'error', mensagem: 'Erro: Necessário preencher o campo E-mail! '}); 
@@ -59,8 +60,7 @@ function Contato() {
     return true;
  }
 
-
-    const valueInput = e => setUser({...user,[e.target.name]: e.target.value})
+ const valueInput = e => setUser({...user,[e.target.name]: e.target.value})
 
      return (
            
@@ -70,12 +70,13 @@ function Contato() {
                 <form id="formulario" autocomplete="off" onSubmit={addUser} >
               
                     <fieldset>
-                        <legend>Preencha o formulário para entrarmos em contato</legend>
+                        <legend>Preencha o formulário para entrar em contato</legend>
                         {status.type ==='success'? <p style={{color: 'green'}}>{status.mensagem}</p> : ""}
                         {status.type ==='error'? <p style={{color: '#ff0000'}}>{status.mensagem}</p> : ""}
-                        <label>Nome*:</label><input name="name" className="campo" type="text" value={user.name} onChange={valueInput}/><br />
-                        <label>Email*:</label><input className="campo" name="email" type="email" value={user.email} onChange={valueInput}  /><br />
-                        <label>Mensages*:</label><br /><textarea className="msg" name="mensagem" cols="35" rows="8" maxLength={10} onChange={valueInput} value={user.mensagem}></textarea><br />
+                        <label>Nome*:</label><input name="name" className="campo" type="text" value={user.name} placeholder="Digite o seu nome" onChange={valueInput}/><br />
+                        <label>Email*:</label><input className="campo" name="email" type="email" value={user.email} placeholder="Digite o seu e-mail" onChange={valueInput}   /><br />
+                        <label>Mensagem*:</label><br /><textarea className="msg" name="mensagem" cols="52" rows="8" onChange={valueInput} value={user.mensagem} 
+                        placeholder="Digite a sua mensagem para entrarmos em contato"></textarea><br />
                         <button class="btn_submit" type="submit" value="Enviar">Enviar</button>
                     </fieldset>
                     <div>
