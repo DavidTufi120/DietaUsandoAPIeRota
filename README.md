@@ -1,3 +1,7 @@
+Para visualizar o projeto sem ter a necessidade de executar o NPM START, basta clicar no link abaixo!
+
+http://dietacomsaude.surge.sh
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
